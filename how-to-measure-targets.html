@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iron Nest How to Measure Targets - Tactical Map &amp; Triangulation Guide</title>
+  <meta name="description" content="How to measure targets in Iron Nest: read the tactical map grid, place markers, triangulate with spotter bearings and record the firing data on your clipboard.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">IRON<span>NEST</span> GUIDE</a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="guide.html">All Guides</a>
+      <a href="controls.html">Controls</a>
+      <a href="how-to-fire.html">How to Fire</a>
+      <a href="ammo-types.html">Ammo</a>
+      <a href="system-requirements.html">Requirements</a>
+      <a href="review.html">Review</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumb"><a href="index.html">Home</a> / <a href="guide.html">Guides</a> / Measure Targets</p>
+    <h1>How to Measure Targets in Iron Nest</h1>
+    <p>The tactical map is the most challenging part of Iron Nest. Learn the grid, the markers and the triangulation method to pin down any target.</p>
+  </div>
+</section>
+
+<article>
+  <div class="wrap">
+
+    <h2>The Map Grid System</h2>
+    <ul>
+      <li>The map is a <strong>20 x 10 grid</strong>: 20 columns labelled <strong>A-T</strong> (left to right) and 10 rows numbered <strong>1-10</strong> (bottom row is 1).</li>
+      <li>Each cell is subdivided into a <strong>10 x 10 sub-grid</strong>, labelled starting from 0 - for example <code>0:4</code>, <code>9:0</code>.</li>
+      <li>Spotters and known points are given as cell + sub-grid coordinates, e.g. <code>F10 8:0</code>, <code>I7 2:4</code>.</li>
+    </ul>
+
+    <h2>Map Markers (Tokens)</h2>
+    <table>
+      <tr><th>Marker</th><th>Purpose</th></tr>
+      <tr><td>Iron Nest token</td><td>Your own position</td></tr>
+      <tr><td>Blue numbered markers (1-4)</td><td>Spotter / recon assets</td></tr>
+      <tr><td>Green letter markers (A-C)</td><td>Reference points</td></tr>
+      <tr><td>Red numbered markers (1-8)</td><td>Target positions</td></tr>
+      <tr><td>Red skull</td><td>Confirmed target destroyed</td></tr>
+      <tr><td>Blue skull</td><td>Confirmed friendly-fire casualty</td></tr>
+    </table>
+
+    <h2>Measurement Steps</h2>
+    <div class="step">
+      <div class="step-num">1</div>
+      <h3>Mark the Known Information (In Order)</h3>
+      <p>Place the Iron Nest token at your position, then each spotter (e.g. "Spotter 1 - N5 4:0"), then any reference points.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h3>Collect the Available Data</h3>
+      <p>You get two kinds of data: <strong>bearing</strong> (direction from a spotter to the target) and <strong>distance</strong> (range from a spotter). Typical intel looks like this:</p>
+      <pre style="background:#1d1a16;border:1px solid #3a342a;border-radius:6px;padding:14px;color:#efe6d3;font-family:Consolas,monospace;font-size:.88rem;overflow-x:auto;">Target #1
+  Bearing 186° from Spotter#1
+  Bearing 111° from Spotter#2
+
+Target #2
+  Distance 7.45km from Spotter#3
+  Distance 3.56km from Spotter#1</pre>
+      <p>Sometimes intel is descriptive ("across the river", "near the structure") - estimate and verify by trial.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h3>Triangulate With the Clipboard Tools</h3>
+      <p>Your clipboard has red, yellow and white pencils plus a drawing compass.</p>
+      <ol>
+        <li>From <strong>Spotter #1's sub-grid cell</strong>, draw a line at 186° - draw it long, the intersection is what matters.</li>
+        <li>From <strong>Spotter #2's sub-grid cell</strong>, draw a line at 111°.</li>
+        <li>The <strong>intersection of the two lines is the target</strong> - place the red target marker.</li>
+        <li>Finally, draw a straight line from the <strong>Iron Nest's cell to the target's cell</strong> - the two numbers shown (bearing and range) are auto-saved to your clipboard.</li>
+      </ol>
+    </div>
+
+    <h2>Key Rules</h2>
+    <ul>
+      <li><strong>Only keep the bearing and range from the Iron Nest to the target.</strong> Delete all other auto-added values to avoid confusion.</li>
+      <li><strong>One target at a time</strong> - unless the target is enemy artillery, in which case locate and mark ALL enemy guns before firing (the counter-battery timer starts after your first round).</li>
+      <li>The yellow marker measures bearing and range; the <strong>red marker records the measurement onto your clipboard</strong> for the firing solution. Mixing them up feeds bad numbers into the calculator.</li>
+    </ul>
+
+    <div class="callout tip">
+      <div class="callout-title">Next Step</div>
+      Got the measurements? Feed them into the <a href="ballistic-calculator.html">Ballistic Calculator</a>.
+    </div>
+
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="guide.html">All Guides</a>
+      <a href="sitemap.xml">Sitemap</a>
+      <a href="https://store.steampowered.com/app/2950790/" target="_blank" rel="noopener">Official Steam Page</a>
+    </div>
+    <p>Fan-made guide site. Not affiliated with the developers of IRON NEST: Heavy Turret Simulator.</p>
+  </div>
+</footer>
+
+</body>
+</html>
